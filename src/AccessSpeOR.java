@@ -3,9 +3,4 @@ public class AccessSpeOR {
 		System.out.println("parent c");
 	}
 	class b extends AccessSpeOR{
-		void mi() {
-			System.out.println("child c");
-		}
-	}
-	
-}
+		void mi() {System.out.println("child c");}}}
