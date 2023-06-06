@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation/>
+  <xs:element name="tXML">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element maxOccurs="1" minOccurs="1" name="Message">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element maxOccurs="unbounded" minOccurs="1" name="Task10">
+		<xs:complexType>
+		  <xs:sequence>
+		    <xs:element maxOccurs="1" minOccurs="1" name="CarCode" nillable="true">
+		      <xs:simpleType>
+			<xs:restriction base="xs:string">
+			  <xs:maxLength value="16"/>
+			</xs:restriction>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="1" name="Model" nillable="true">
+		      <xs:simpleType>
+			<xs:restriction base="xs:string">
+			  <xs:maxLength value="16"/>
+			</xs:restriction>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="1" name="SeatingCapacity" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:string">
+			  <xs:maxLength value="50"/>
+			</xs:restriction>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="1" name="Power" nillable="true">
+		      <xs:simpleType>
+			<xs:restriction base="xs:string">
+			  <xs:maxLength value="16"/>
+			</xs:restriction>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="0" name="CarFirstYardEntryDateTime" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:dateTime"/>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="0" name="CarRecentYardEntryDateTime" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:dateTime"/>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="0" name="LastOilChangeDate" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:date"/>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="0" name="Createdsource" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="0" name="Createdsourcetype" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="0" name="Createddatetime" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:dateTime"/>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="0" name="Modifiedsource" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="0" name="Modifiedsourcetype" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		      </xs:simpleType>
+		    </xs:element>
+		    <xs:element maxOccurs="1" minOccurs="0" name="Modifieddatetime" nillable="false">
+		      <xs:simpleType>
+			<xs:restriction base="xs:dateTime"/>
+		      </xs:simpleType>
+		    </xs:element>
+		  </xs:sequence>
+		</xs:complexType>
+	      </xs:element>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
